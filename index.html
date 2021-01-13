@@ -3,20 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <LINK REL=StyleSheet HREF="estiloS.css" TYPE="text/css" MEDIA=screen>
     <title>Codigos postales</title>
 </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
    
-    <section class="postales">
+    <section class="postales tm-brand-container text-center">
         <article>
-            <thead>
-            <h2>ver codigos</h2>
-            <table class="postales-table">
+            
+            <h2>Codigos Postales de Mexico</h2>
+            
+            <table class="postales-table table table-hover ">
+                <thead > 
                 <tr>
-                    <th class="NRO ID">id</th>
-                    <th class="CODIGO POSTAL">Codigo Postal</th>
-                    <th class="ASENTAMIENTO">Asentamiento</th>
-                    <th class="CIUDAD">ciudad</th>
+                    <th class="NRO ID" scope="col">NRO</th>
+                    <th class="CODIGO POSTAL" scope="col">CODIGO POSTAL</th>
+                    <th class="ASENTAMIENTO" scope="col">ASENTAMIENTOS</th>
+                    <th class="CIUDAD" scope="col">CIUDAD</th>
                     
                 </tr>
             </thead>
@@ -30,7 +42,7 @@
     </section>
 <template id="postales-template">
     <tr>
-        <td class="Id"></td>
+        <td  scope="row"class="Id"></td>
         <td class="CodigoPostal"></td>
         <td class="Asentamiento"></td>
         <td class="ciudad"></td>
